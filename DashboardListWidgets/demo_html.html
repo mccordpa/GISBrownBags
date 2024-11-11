@@ -1,1 +1,21 @@
-
+<div style="background-color:#C2D4D6;border-radius:20px;height:{expression/cardHeight};outline:solid 2px #496A6E;padding-left:15px;padding-right:15px;padding-top:10px;">
+    <div style="display:flex;flex-direction:row;justify-content:space-between;">
+        <div style="font-size:1.3em;font-weight:500;">
+            {field/FACILITYID}
+        </div>
+        <div style="color:{expression/statusColor};font-size:1.2em;padding-right:10px;">
+            <strong>{field/CleaningStatus}</strong>
+        </div>
+    </div>
+    <div style="display:flex;flex-direction:row;justify-content:space-between;">
+        <div style="margin-bottom:10px;padding-top:10px;">
+            📅{field/LastCleanDate}
+        </div>
+        <div style="display:{expression/inspCount};padding-right:10px;padding-top:5px;text-align:center;">
+            Total Inspections: <span style="font-size:18px;"><strong>{field/TotalInspections}&nbsp;</strong></span>
+        </div>
+    </div>
+    <div style="background-color:black;border-radius:20px;color:red;display:{expression/maintNeeded};height:40%;padding-top:15px;text-align:center;">
+        <strong>🚩Maintenance Needed</strong>
+    </div>
+</div>
